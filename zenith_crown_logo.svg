@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="50%" stop-color="#E8A820" />
+      <stop offset="100%" stop-color="#B8841A" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="400" height="400" rx="40" fill="#060911" />
+
+  <!-- Crown with jewels cut out -->
+  <!-- Main Crown Shape -->
+  <path d="M 100 170 
+           L 142 225 
+           C 152 205, 165 185, 200 120 
+           C 235 185, 248 205, 258 225 
+           L 300 170 
+           L 272 240 
+           L 128 240 
+           Z" fill="url(#goldGradient)" />
+  
+  <!-- Crown Jewel Circle Cutouts -->
+  <circle cx="160" cy="210" r="15" fill="#060911" />
+  <circle cx="240" cy="210" r="15" fill="#060911" />
+
+  <!-- Horizontal Divider Bar below crown -->
+  <rect x="128" y="248" width="144" height="18" rx="2" fill="url(#goldGradient)" />
+
+  <!-- Bold Z Emblem -->
+  <path d="M 128 280 
+           H 272 
+           V 310 
+           L 182 390 
+           H 272 
+           V 420 
+           H 128 
+           V 390 
+           L 218 310 
+           H 128 
+           Z" fill="url(#goldGradient)" transform="scale(0.85) translate(35, -25)" />
+</svg>
