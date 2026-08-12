@@ -1,4 +1,4 @@
-const CACHE_NAME = "zenith-bio102-v1";
+const CACHE_NAME = "zenith-bio102-v2";
 const PRECACHE_URLS = [
   "./",
   "./index.html",
